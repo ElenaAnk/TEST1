@@ -21,7 +21,7 @@ public class LibraryModel {
 
 
 
-    public List<LibraryModel> createBook() { //создать библиотеку
+    public List<LibraryModel> createBook() { 
         LibraryModel book1 = new LibraryModel(1,"Пушкин","Сказка о царе Салтане");
         LibraryModel book2 = new LibraryModel(2,"Бунин","Тёмные аллеи");
         LibraryModel book3 = new LibraryModel(3,"Толстой","Война и мир");
@@ -42,7 +42,7 @@ public class LibraryModel {
         return books;
     }
 
-    public void searchIdBook(List<LibraryModel> books) { //поиск по айди
+    public void searchIdBook(List<LibraryModel> books) { 
         System.out.println("Введите id издания: ");
         int a = Integer.parseInt(new Scanner(System.in).nextLine());
 
@@ -53,7 +53,7 @@ public class LibraryModel {
         }
     }
 
-    public void searchAuthor(List<LibraryModel> books) { //поиск по автору
+    public void searchAuthor(List<LibraryModel> books) { 
         System.out.println("Введите автора издания: ");
         String b = new Scanner(System.in).nextLine();
 
